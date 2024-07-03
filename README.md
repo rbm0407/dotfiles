@@ -4,7 +4,7 @@ Now it is less bloated
 
 If you want to see the old dotfiles, check out [rbm0407/dotfiles-old](https://github.com/rbm0407/dotfiles-old)
 
-[Screenshot](./.local/share/doc/rbm0407-dotfiles/screenshot.png)
+![Screenshot](./.local/share/doc/rbm0407-dotfiles/screenshot.png)
 
 
 ## Branches:
