@@ -6,12 +6,6 @@ If you want to see the old dotfiles, check out [rbm0407/dotfiles-old](https://gi
 
 ![Screenshot](./.local/share/doc/rbm0407-dotfiles/screenshot.png)
 
-
-## Branches:
-* i3: my old i3configs
-* master: using dwm
-
-
 ### Using:
  * zsh less bloated with fzf and vi mode
  * nvim with nvchad
@@ -35,7 +29,7 @@ base linux linux-firmware grub efibootmgr less vim opendoas openssh zsh bat duns
  * now you can use it with `startx`
 
 ### Optional Packages
-See [archlinux-packages.txt](./archlinux-packages.txt)
+See [archlinux-packages.txt](./.local/share/doc/rbm0407-dotfiles/archlinux-full-packages.txt)
 
 
 ### Optional configs:
