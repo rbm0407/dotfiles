@@ -13,6 +13,7 @@ local config = wezterm.config_builder()
 config.font = wezterm.font 'Fira Code'
 
 config.enable_tab_bar = false
+config.audible_bell = 'Disabled'
 
 -- and finally, return the configuration to wezterm
 return config
