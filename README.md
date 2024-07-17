@@ -43,5 +43,8 @@ Section "InputClass"
 EndSection
 ```
 
+### Preferences
+* Firefox theme: https://addons.mozilla.org/en-US/firefox/addon/ar51an-dark/
+
 ### License
 [GPL-3.0](LICENSE)
