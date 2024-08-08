@@ -21,6 +21,7 @@ return {
   		ensure_installed = {
   			"lua-language-server", "stylua",
   			"html-lsp", "css-lsp" , "prettier", "rust-analyzer",
+        "phpactor", "bash-language-server", "python-lsp-server"
   		},
   	},
   },
@@ -29,7 +30,8 @@ return {
   	opts = {
   		ensure_installed = {
   			"vim", "lua", "vimdoc",
-       "html", "css", "rust",
+        "html", "css", "rust",
+        "php", "bash",
   		},
   	},
   },

@@ -1,6 +1,9 @@
 base
 bashtop
 bat
+bluez
+bluez-utils
+debugedit
 docker
 dunst
 efibootmgr
@@ -15,8 +18,12 @@ fzf
 gcc
 git
 grub
+htop
 i3lock
 iwd
+jless
+jq
+kubectl
 less
 lf
 libnotify
@@ -24,6 +31,7 @@ libvncserver
 linux
 linux-firmware
 make
+minikube
 man-db
 mpv
 neovim
@@ -47,6 +55,7 @@ ripgrep
 rofi
 rust
 rust-analyzer
+scrot
 tmux
 ttf-anonymous-pro
 ttf-fira-code
@@ -64,6 +73,7 @@ vulkan-intel
 wezterm
 which
 woff-fira-code
+xbindkeys
 xf86-video-intel
 xorg-bdftopcf
 xorg-iceauth
@@ -96,5 +106,6 @@ xorg-xwd
 xorg-xwininfo
 xorg-xwud
 zsh
+zsh-completions
 zsh-autosuggestions
 zsh-syntax-highlighting

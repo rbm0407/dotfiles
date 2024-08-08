@@ -1,3 +1,6 @@
+autoload -Uz compinit
+compinit
+
 bindkey -v
 
 HISTFILE=~/.zsh_history
@@ -26,5 +29,8 @@ alias ls=eza
 alias grep='grep --color'
 
 # https://robotmoon.com/zsh-prompt-generator/
-export PS1="%{%F{7}%}%n%{%F{81}%}@%{%F{80}%}%m %{%F{33}%}%1~ %{%f%}$ "
+#export PS1="%{%F{7}%}%n%{%F{81}%}@%{%F{80}%}%m %{%F{33}%}%1~ %{%f%}$ "
+export PS1="%{%F{7}%}%n%{%F{81}%} %{%F{33}%}%1~ %{%f%}$ "
 export EDITOR=nvim
+
+source <(kubectl completion zsh)

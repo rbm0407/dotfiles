@@ -11,6 +11,9 @@
 !.local/
 .local/*
 !.local/src/
+.local/src/aur
+.local/src/dwm-6.5/dwm
+.local/src/dwm-6.5/dwm.o
 !.local/share/
 .local/share/*
 !.local/share/doc

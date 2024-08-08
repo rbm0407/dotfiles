@@ -9,6 +9,7 @@ local config = wezterm.config_builder()
 -- For example, changing the color scheme:
 --config.color_scheme = 'AdventureTime'
 --config.color_scheme = 'Moonfly (Gogh)'
+config.color_scheme = 'Andromeda'
 
 config.font = wezterm.font 'Fira Code'
 

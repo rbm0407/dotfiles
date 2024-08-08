@@ -12,6 +12,7 @@ dwm_date () {
     else
         printf "DAT %s" "$(date "+%a %d-%m-%y %T")"
     fi
+    printf " %s " "$(TZ=America/Sao_Paulo date "+%T")"
     printf "%s\n" "$SEP2"
 }
 
