@@ -13,4 +13,8 @@ M.ui = {
 	-- },
 }
 
+M.options = {
+  smartindent = false,
+}
+
 return M
