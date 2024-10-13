@@ -21,6 +21,7 @@ git
 grub
 htop
 Hyprland
+hyprlock
 hyprpaper
 i3lock
 iwd
