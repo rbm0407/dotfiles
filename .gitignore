@@ -1,13 +1,16 @@
 /*
 /*/
 !.gitignore
+!.wallpaper.png
 !LICENSE
 !README.md
 !archlinux-packages.txt
 !.config/
 .config/*
+!.config/hypr
 !.config/nvim
 !.config/rofi
+!.config/waybar
 !.local/
 .local/*
 !.local/src/
