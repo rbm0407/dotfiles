@@ -9,7 +9,7 @@ If you want to see the old dotfiles, check out [rbm0407/dotfiles-old](https://gi
 dwm (X11)
 ![Screenshot X11](./.local/share/doc/rbm0407-dotfiles/screenshot.png)
 
-Wayland (Hyprland)
+Hyprland (Wayland)
 ![Screenshot X11](./.local/share/doc/rbm0407-dotfiles/screenshot-wayland.png)
 
 </div>
