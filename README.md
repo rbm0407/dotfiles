@@ -10,7 +10,7 @@ dwm (X11)
 ![Screenshot X11](./.local/share/doc/rbm0407-dotfiles/screenshot.png)
 
 Hyprland (Wayland)
-![Screenshot X11](./.local/share/doc/rbm0407-dotfiles/screenshot-wayland.png)
+![Screenshot Wayland](./.local/share/doc/rbm0407-dotfiles/screenshot-wayland.png)
 
 </div>
 
