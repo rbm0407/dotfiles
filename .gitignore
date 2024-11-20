@@ -2,6 +2,7 @@
 /*/
 !.gitignore
 !.wallpaper.png
+!COPYING
 !LICENSE
 !README.md
 !archlinux-packages.txt
