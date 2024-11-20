@@ -8,6 +8,7 @@
 !.config/
 .config/*
 !.config/hypr
+!.config/kitty
 !.config/nvim
 !.config/rofi
 !.config/waybar

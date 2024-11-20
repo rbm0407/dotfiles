@@ -27,6 +27,7 @@ i3lock
 iwd
 jless
 jq
+kitty
 kubectl
 less
 lf
@@ -45,6 +46,7 @@ npm
 onefetch
 opendoas
 openssh
+otf-cascadia-code
 otf-fira-mono
 otf-fira-sans
 p7zip
@@ -53,10 +55,10 @@ powerline
 powerline-fonts
 pulsemixer
 python-psutil
+python-pygments
 qutebrowser
 remmina
 ripgrep
-rio
 rofi
 rust
 rust-analyzer
