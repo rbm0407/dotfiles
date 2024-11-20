@@ -4,3 +4,4 @@ set downloadpath=~/downloads/
 set vimcommand="rio -e vim"
 nmap O <:tabnew><toExploreMode>
 nmap o <toExploreMode><BS>
+set searchengine=["https://search.brave.com/search?q=%s"]
