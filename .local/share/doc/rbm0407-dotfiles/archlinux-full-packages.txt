@@ -22,7 +22,6 @@ grub
 htop
 Hyprland
 hyprlock
-hyprpaper
 i3lock
 iwd
 jless
@@ -81,6 +80,7 @@ waybar
 wezterm
 which
 woff-fira-code
+wpaperd
 xbindkeys
 xf86-video-intel
 xorg-bdftopcf

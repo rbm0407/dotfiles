@@ -13,6 +13,7 @@
 !.config/nvim
 !.config/rofi
 !.config/waybar
+!.config/wpaperd
 !.local/
 .local/*
 !.local/src/

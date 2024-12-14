@@ -27,13 +27,13 @@ Hyprland (Wayland)
 
 ### Wayland
  * Hyprland
- * hyprpaper
  * waybar
+ * wpaperd
 
 ### Dependencies
 My basic Archlinux packages:
 
-base linux linux-firmware grub efibootmgr less vim opendoas openssh zsh bat dunst eza fakeroot fastfetch firefox firefox-tridactyl firewalld flameshot fzf gcc git hyprland hyprlock hyprpaper i3lock iwd kitty lf make man-db mpv neovim noto-fonts-cjk noto-fonts-emoji npm otf-cascadia-code otf-fira-mono otf-fira-sans p7zip pamixer powerline powerline-fonts pulsemixer python-psutil qutebrowser ripgrep rofi rust rust-analyzer tmux ttf-anonymous-pro ttf-fira-code ttf-font-awesome ttf-hack-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono unzip upower vulkan-intel waybar wezterm which woff-fira-code xorg zsh-autosuggestions zsh-completions zsh-syntax-highlighting kubectl
+base linux linux-firmware grub efibootmgr less vim opendoas openssh zsh bat dunst eza fakeroot fastfetch firefox firefox-tridactyl firewalld flameshot fzf gcc git hyprland hyprlock i3lock iwd kitty lf make man-db mpv neovim noto-fonts-cjk noto-fonts-emoji npm otf-cascadia-code otf-fira-mono otf-fira-sans p7zip pamixer powerline powerline-fonts pulsemixer python-psutil qutebrowser ripgrep rofi rust rust-analyzer tmux ttf-anonymous-pro ttf-fira-code ttf-font-awesome ttf-hack-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono unzip upower vulkan-intel waybar wezterm which woff-fira-code wpaperd xorg zsh-autosuggestions zsh-completions zsh-syntax-highlighting kubectl
 
 ### Install:
 
