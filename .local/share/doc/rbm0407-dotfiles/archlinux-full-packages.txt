@@ -81,6 +81,7 @@ wezterm
 which
 woff-fira-code
 wpaperd
+yazi
 xbindkeys
 xf86-video-intel
 xorg-bdftopcf
