@@ -12,6 +12,7 @@
 !.config/kitty
 !.config/nvim
 !.config/rofi
+!.config/yazi
 !.config/waybar
 !.config/wpaperd
 !.local/
