@@ -1,32 +1,28 @@
-return {}
---return {
---  url = 'https://gitlab.com/schrieveslaach/sonarlint.nvim',
---  ft = { 'python', 'cpp', 'java', 'php' },
---  dependencies = {
---    'mfussenegger/nvim-jdtls',
---    'williamboman/mason.nvim',
---  },
---  config = function()
---    local sonar_language_server_path = require('mason-registry').get_package('sonarlint-language-server'):get_install_path()
---    local analyzers_path = sonar_language_server_path .. '/extension/analyzers'
---    require('sonarlint').setup {
---      server = {
---        cmd = {
---          sonar_language_server_path .. '/sonarlint-language-server.cmd',
---          '-stdio',
---          '-analyzers',
---          vim.fn.expand(analyzers_path .. '/sonarpython.jar'),
---          vim.fn.expand(analyzers_path .. '/sonarcfamily.jar'),
---          vim.fn.expand(analyzers_path .. '/sonarjava.jar'),
---          vim.fn.expand(analyzers_path .. '/sonarphp.jar'),
---        },
---      },
---      filetypes = {
---        'php',
---        'python',
---        'cpp',
---        'java',
---      },
---    }
---  end,
---}
+return {
+  {
+    'https://gitlab.com/schrieveslaach/sonarlint.nvim.git',
+    opts = {
+      server = {
+        cmd = {
+          'sonarlint-language-server',
+          '-stdio',
+          '-analyzers',
+          vim.fn.expand '~/.local/share/nvim/mason/share/sonarlint-analyzers/sonarhtml.jar',
+          vim.fn.expand '~/.local/share/nvim/mason/share/sonarlint-analyzers/sonarjs.jar',
+          vim.fn.expand '~/.local/share/nvim/mason/share/sonarlint-analyzers/sonargo.jar',
+          vim.fn.expand '~/.local/share/nvim/mason/share/sonarlint-analyzers/sonarphp.jar',
+          vim.fn.expand '~/.local/share/nvim/mason/share/sonarlint-analyzers/sonarpython.jar',
+        },
+      },
+      filetypes = {
+        'html',
+        'js',
+        'go',
+        'php',
+        'python',
+        'typescript',
+        'typescriptreact',
+      },
+    },
+  },
+}
