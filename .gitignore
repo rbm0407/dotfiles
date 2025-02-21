@@ -8,6 +8,7 @@
 !archlinux-packages.txt
 !.config/
 .config/*
+!.config/ghostty
 !.config/hypr
 !.config/kitty
 !.config/nvim
