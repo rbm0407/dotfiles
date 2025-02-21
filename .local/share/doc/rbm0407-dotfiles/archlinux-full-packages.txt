@@ -61,6 +61,7 @@ ripgrep
 rofi
 rust
 rust-analyzer
+satty
 scrot
 tmux
 ttf-anonymous-pro
