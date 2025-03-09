@@ -32,7 +32,7 @@
         "clock",
         "clock#utc",
         "tray",
-        "custom/power"
+        "custom/splash"
     ],
     "keyboard-state": {
         "numlock": true,
@@ -201,5 +201,10 @@
             "suspend": "systemctl suspend",
             "hibernate": "systemctl hibernate"
         }
-    }
+    },
+    "custom/splash": {
+        "exec": "hyprctl splash",
+        "interval": "once",
+        "tooltip": false
+    },
 }
