@@ -15,7 +15,6 @@
 !.config/rofi
 !.config/yazi
 !.config/waybar
-!.config/wpaperd
 !.local/
 .local/*
 !.local/src/
