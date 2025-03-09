@@ -39,6 +39,10 @@ export EDITOR=nvim
 
 source <(kubectl completion zsh)
 
+function s() {
+    TERM=xterm-256color ssh "$@" -t "export EDITOR=vi; bash -i -c 'bind \"\\C-l\":clear; bash -o vi'"
+}
+
 function y() {
     local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
     yazi "$@" --cwd-file="$tmp"
