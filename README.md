@@ -21,21 +21,25 @@ Hyprland (Wayland)
  * ghostty
  * .bashrc, .editrc and .inputrc set to use vi mode
 
-### X11
- * suckless dwm
- * dwm-bar
-
 ### Wayland
  * Hyprland
  * waybar
  * hyprpaper
 
+### X11
+ * suckless dwm
+ * dwm-bar
+
 ### Dependencies
 My basic Archlinux packages:
 
-base linux linux-firmware grub efibootmgr less vim opendoas openssh zsh bat dunst eza fakeroot fastfetch firefox firefox-tridactyl firewalld flameshot fzf gcc git hyprland hyprlock hyprpaper i3lock iwd ghostty lf make man-db mpv neovim noto-fonts-cjk noto-fonts-emoji npm otf-cascadia-code otf-fira-mono otf-fira-sans p7zip pamixer powerline powerline-fonts pulsemixer python-psutil qutebrowser ripgrep rofi rust rust-analyzer satty tmux ttf-anonymous-pro ttf-fira-code ttf-font-awesome ttf-hack-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono unzip upower vulkan-intel waybar wezterm which woff-fira-code yazi xorg zsh-autosuggestions zsh-completions zsh-syntax-highlighting kubectl
+base linux linux-firmware grub efibootmgr less vim opendoas openssh zsh bat dunst eza fakeroot fastfetch firewalld flameshot fzf gcc git hyprland hyprlock hyprpaper i3lock iwd ghostty lf make man-db mpv neovim noto-fonts-cjk noto-fonts-emoji npm otf-cascadia-code otf-fira-mono otf-fira-sans p7zip pamixer powerline powerline-fonts pulsemixer python-psutil qutebrowser ripgrep rofi rust rust-analyzer satty tmux ttf-anonymous-pro ttf-fira-code ttf-font-awesome ttf-hack-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono unzip upower vulkan-intel waybar wezterm which woff-fira-code yazi xorg zsh-autosuggestions zsh-completions zsh-syntax-highlighting kubectl
 
 ### Install:
+
+#### Wayland
+  * add your user to seat group,
+  * logout and run `Hyprland`
 
 #### X11
  * clone to your home directory
@@ -44,10 +48,6 @@ base linux linux-firmware grub efibootmgr less vim opendoas openssh zsh bat duns
     $ cd ./.local/src/dwm-6.5 && make && doas make install
     ```
  * now you can use it with `startx`
-
-#### Wayland
-  * add your user to seat group,
-  * logout and run `Hyprland`
 
 ### Optional Packages
 See [archlinux-packages.txt](./.local/share/doc/rbm0407-dotfiles/archlinux-full-packages.txt)
@@ -62,9 +62,6 @@ Section "InputClass"
     Option      "XkbOptions" "ctrl:nocaps"
 EndSection
 ```
-
-### Preferences
-* Firefox theme: https://addons.mozilla.org/en-US/firefox/addon/ar51an-dark/
 
 ### License
 [GPL-3.0](LICENSE)
