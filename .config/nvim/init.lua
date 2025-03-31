@@ -705,6 +705,7 @@ require('lazy').setup({
         'rust-analyzer',
         'python-lsp-server',
         'yaml-language-server',
+        'tailwindcss-language-server',
         'typescript-language-server',
         'stimulus-language-server', -- blade
         'stylua', -- Used to format Lua code
