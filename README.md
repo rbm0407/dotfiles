@@ -6,11 +6,11 @@ If you want to see the old dotfiles, check out [rbm0407/dotfiles-old](https://gi
 
 <div align="center">
 
-dwm (X11)
-![Screenshot X11](./.local/share/doc/rbm0407-dotfiles/screenshot.png)
-
 Hyprland (Wayland)
 ![Screenshot Wayland](./.local/share/doc/rbm0407-dotfiles/screenshot-wayland.png)
+
+dwm (X11)
+![Screenshot X11](./.local/share/doc/rbm0407-dotfiles/screenshot.png)
 
 </div>
 
