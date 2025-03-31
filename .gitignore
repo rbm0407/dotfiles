@@ -1,6 +1,7 @@
 /*
 /*/
 !.gitignore
+!.p10k.zsh
 !.wallpaper.png
 !COPYING
 !LICENSE

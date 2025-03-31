@@ -15,25 +15,27 @@ Hyprland (Wayland)
 </div>
 
 ### Using:
- * zsh less bloated with fzf and vi mode
- * nvim with nvchad
- * tmux
- * ghostty
- * .bashrc, .editrc and .inputrc set to use vi mode
+ * [zsh](https://man.archlinux.org/man/zsh.1.en) less bloated with [fzf](https://junegunn.github.io/fzf) and vi mode
+ * [p10k](https://github.com/romkatv/powerlevel10k)
+ * [nvim](https://neovim.io/) with [kickstart](https://github.com/nvim-lua/kickstart.nvim)
+ * [tmux](https://github.com/tmux/tmux)
+ * [ghostty](https://ghostty.org)
+ * .bashrc, .editrc and .inputrc set to use [vi mode](https://wiki.archlinux.org/title/Readline#Editing_mode)
+ * [rofi](https://davatorium.github.io/rofi)
+ * [dunst](https://dunst-project.org)
 
 ### Wayland
- * Hyprland
- * waybar
- * hyprpaper
+ * [Hyprland](https://hyprland.org)
+ * [Hyprpaper](https://wiki.hyprland.org/Hypr-Ecosystem/hyprpaper/)
+ * [Waybar](https://github.com/Alexays/Waybar)
 
 ### X11
- * suckless dwm
- * dwm-bar
+ * [suckless dwm](https://dwm.suckless.org)
 
 ### Dependencies
 My basic Archlinux packages:
 
-base linux linux-firmware grub efibootmgr less vim opendoas openssh zsh bat dunst eza fakeroot fastfetch firewalld flameshot fzf gcc git hyprland hyprlock hyprpaper i3lock iwd ghostty lf make man-db mpv neovim noto-fonts-cjk noto-fonts-emoji npm otf-cascadia-code otf-fira-mono otf-fira-sans p7zip pamixer powerline powerline-fonts pulsemixer python-psutil qutebrowser ripgrep rofi rust rust-analyzer satty tmux ttf-anonymous-pro ttf-fira-code ttf-font-awesome ttf-hack-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono unzip upower vulkan-intel waybar wezterm which woff-fira-code yazi xorg zsh-autosuggestions zsh-completions zsh-syntax-highlighting kubectl
+base linux linux-firmware grub efibootmgr less vim opendoas openssh zsh bat dunst eza fakeroot fastfetch firewalld fd fzf gcc git hyprland hyprlock hyprpaper i3lock iwd ghostty grim lf make man-db mpv neovim noto-fonts-cjk noto-fonts-emoji npm otf-cascadia-code otf-fira-mono otf-fira-sans p7zip pamixer powerline powerline-fonts pulsemixer python-psutil qutebrowser ripgrep rofi rust rust-analyzer satty slurp tmux ttf-anonymous-pro ttf-fira-code ttf-font-awesome ttf-hack-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono unzip upower vulkan-intel waybar which wl-clipboard woff-fira-code yazi xdg-desktop-portal-hyprland xorg zsh-autosuggestions zsh-completions zsh-syntax-highlighting kubectl
 
 ### Install:
 
