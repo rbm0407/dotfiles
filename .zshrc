@@ -38,7 +38,7 @@ alias g=git
 alias vim=nvim
 alias mpa='mpv --no-video'
 
-export PATH=$PATH:~/.config/composer/vendor/bin
+export PATH=$PATH:~/.config/composer/vendor/bin:~/go/bin
 
 # https://robotmoon.com/zsh-prompt-generator/
 #export PS1="%{%F{7}%}%n%{%F{81}%}@%{%F{80}%}%m %{%F{33}%}%1~ %{%f%}$ "
