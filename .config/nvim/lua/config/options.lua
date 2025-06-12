@@ -7,3 +7,5 @@ vim.g.maplocalleader = "\\"
 vim.opt.clipboard = ""
 
 vim.opt.relativenumber = true
+
+vim.opt.wrap = true
