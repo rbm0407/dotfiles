@@ -31,7 +31,9 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/fzf/key-bindings.zsh
 
+alias dc='docker compose'
 alias k=kubectl
+alias l='ls -F'
 alias ls=eza
 alias grep='grep --color'
 alias g=git
