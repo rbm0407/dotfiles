@@ -25,6 +25,7 @@ htop
 Hyprland
 hyprlock
 hyprpaper
+hyprshot
 i3lock
 iwd
 jless

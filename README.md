@@ -27,6 +27,7 @@ dwm (X11)
 ### Wayland
  * [Hyprland](https://hyprland.org)
  * [Hyprpaper](https://wiki.hyprland.org/Hypr-Ecosystem/hyprpaper/)
+ * [Hyprshot](https://github.com/Gustash/Hyprshot)
  * [Waybar](https://github.com/Alexays/Waybar)
 
 ### X11
@@ -35,7 +36,7 @@ dwm (X11)
 ### Dependencies
 My basic Archlinux packages:
 
-base linux linux-firmware grub efibootmgr less vim opendoas openssh zsh bat dunst eza fakeroot fastfetch firewalld fd fzf gcc git hyprland hyprlock hyprpaper i3lock iwd ghostty grim lf make man-db mpv neovim noto-fonts-cjk noto-fonts-emoji npm otf-cascadia-code otf-fira-mono otf-fira-sans p7zip pamixer powerline powerline-fonts pulsemixer python-psutil qutebrowser ripgrep rofi rust rust-analyzer satty slurp tmux ttf-anonymous-pro ttf-fira-code ttf-font-awesome ttf-hack-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono unzip upower vulkan-intel waybar which wl-clipboard woff-fira-code yazi xdg-desktop-portal-hyprland xorg zsh-autosuggestions zsh-completions zsh-syntax-highlighting kubectl
+base linux linux-firmware grub efibootmgr less vim opendoas openssh zsh bat dunst eza fakeroot fastfetch firewalld fd fzf gcc git hyprland hyprlock hyprpaper hyprshot i3lock iwd ghostty grim lf make man-db mpv neovim noto-fonts-cjk noto-fonts-emoji npm otf-cascadia-code otf-fira-mono otf-fira-sans p7zip pamixer powerline powerline-fonts pulsemixer python-psutil qutebrowser ripgrep rofi rust rust-analyzer satty slurp tmux ttf-anonymous-pro ttf-fira-code ttf-font-awesome ttf-hack-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono unzip upower vulkan-intel waybar which wl-clipboard woff-fira-code yazi xdg-desktop-portal-hyprland xorg zsh-autosuggestions zsh-completions zsh-syntax-highlighting kubectl
 
 ### Install:
 
