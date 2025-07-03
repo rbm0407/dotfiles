@@ -39,6 +39,7 @@ alias grep='grep --color'
 alias g=git
 alias vim=nvim
 alias mpa='mpv --no-video'
+alias gemini='docker run --rm -it -v ~/.gemini:/home/node/.gemini -v ~/output/:/home/node/output gemini gemini'
 
 export PATH=$PATH:~/.config/composer/vendor/bin:~/go/bin
 
