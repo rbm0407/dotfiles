@@ -40,6 +40,7 @@ alias g=git
 alias vim=nvim
 alias mpa='mpv --no-video'
 alias gemini='docker run --rm -it -v ~/.gemini:/home/node/.gemini -v ~/output/:/home/node/output gemini gemini'
+alias minikubestart='minikube start && minikube addons enable ingress && minikube addons enable metrics-server && kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisioner/v0.0.31/deploy/local-path-storage.yaml'
 
 export PATH=$PATH:~/.config/composer/vendor/bin:~/go/bin
 
