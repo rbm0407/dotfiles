@@ -66,5 +66,24 @@ function y() {
 
 source ~/.local/src/powerlevel10k/powerlevel10k.zsh-theme
 
+# Change cursor shape for different vi modes
+function zle-keymap-select () {
+  if [[ ${KEYMAP} == vicmd ]]; then
+    # blinking block cursor in command mode
+    echo -ne '\e[1 q'
+  elif [[ ${KEYMAP} == main || ${KEYMAP} == viins ]]; then
+    # blinking pipe cursor in insert mode
+    echo -ne '\e[5 q'
+  fi
+}
+zle -N zle-keymap-select
+
+# Set the initial cursor to a pipe when the shell starts
+zle-line-init() {
+    zle -K viins
+    echo -ne '\e[5 q'
+}
+zle -N zle-line-init
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
