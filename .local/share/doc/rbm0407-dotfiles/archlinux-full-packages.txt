@@ -52,6 +52,7 @@ openssh
 otf-cascadia-code
 otf-fira-mono
 otf-fira-sans
+otf-font-awesome
 p7zip
 pamixer
 powerline
