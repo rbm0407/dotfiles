@@ -87,6 +87,7 @@ waybar
 which
 wl-clipboard
 woff-fira-code
+wtype
 yazi
 xbindkeys
 xdg-desktop-portal-hyprland
