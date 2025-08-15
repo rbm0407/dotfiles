@@ -4,10 +4,10 @@
 vim.g.mapleader = "\\"
 vim.g.maplocalleader = "\\"
 
-vim.opt.clipboard = ""
+vim.o.clipboard = ""
 
-vim.opt.relativenumber = true
+vim.o.relativenumber = true
 
-vim.opt.wrap = true
+vim.o.wrap = true
 
-vim.opt.guicursor = "n-v-c:block-blinkwait700-blinkoff400-blinkon250,i:ver25-blinkwait700-blinkoff400-blinkon250"
+vim.o.guicursor = "n-v-c:block-blinkwait700-blinkoff400-blinkon250,i:ver25-blinkwait700-blinkoff400-blinkon250"
