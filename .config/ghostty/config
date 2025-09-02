@@ -49,7 +49,7 @@
 # 
 # Changing this configuration at runtime will only affect new terminals, i.e.
 # new windows, tabs, etc.
-font-family = Cascadia Mono
+font-family = Hack Nerd Font
 
 font-family-bold = 
 font-family-italic = 
@@ -402,7 +402,7 @@ theme = Brogrammer
 # Background color for the window.
 # Specified as either hex (`#RRGGBB` or `RRGGBB`) or a named X11 color.
 # background = #282c34
-background = #000
+background = #00170A
 
 # Foreground color for the window.
 # Specified as either hex (`#RRGGBB` or `RRGGBB`) or a named X11 color.
