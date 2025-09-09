@@ -16,7 +16,6 @@ dwm (X11)
 
 ### Using:
  * [zsh](https://man.archlinux.org/man/zsh.1.en) less bloated with [fzf](https://junegunn.github.io/fzf) and vi mode
- * [p10k](https://github.com/romkatv/powerlevel10k)
  * [nvim](https://neovim.io/) with [kickstart](https://github.com/nvim-lua/kickstart.nvim)
  * [tmux](https://github.com/tmux/tmux)
  * [ghostty](https://ghostty.org)
