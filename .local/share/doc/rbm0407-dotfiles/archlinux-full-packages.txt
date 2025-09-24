@@ -122,6 +122,7 @@ xorg-xvinfo
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
+zellij
 zsh
 zsh-completions
 zsh-autosuggestions

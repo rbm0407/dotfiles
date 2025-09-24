@@ -16,6 +16,7 @@
 !.config/rofi
 !.config/yazi
 !.config/waybar
+!.config/zellij
 !.local/
 .local/*
 !.local/src/
