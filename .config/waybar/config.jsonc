@@ -99,7 +99,8 @@
         "timezone": "UTC",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}",
-        "format": "{:%H:%M} 🌎"
+        "format": "{:%H:%M:%S} 🌎",
+        "interval": 1
     },
     "cpu": {
         "format": "{usage}% ",
