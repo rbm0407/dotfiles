@@ -23,7 +23,13 @@ return {
       linters = {
         phpcs = {
           args = {
+            "-q",
+            "--report=json",
             "--standard=PSR12",
+            function()
+              return "--stdin-path=" .. vim.fn.expand("%:p:.")
+            end,
+            "-", -- need `-` at the end for stdin support
           },
         },
       },
