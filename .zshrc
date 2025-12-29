@@ -51,7 +51,7 @@ export PROMPT=$(echo -n "$PROMPT_BASE" | sed 's/<placeholder>/${vcs_info_msg_0_}
 # define nvim as default editor and alias vim command
 export EDITOR=nvim
 export PATH=$PATH:~/.config/composer/vendor/bin:~/go/bin
-export BAT_THEME="base16-256"
+export BAT_THEME="zenburn"
 
 # Change cursor shape for different vi modes
 function zle-keymap-select () {
