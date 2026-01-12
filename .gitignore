@@ -12,6 +12,7 @@
 !.config/ghostty
 !.config/hypr
 !.config/kitty
+!.config/ncdu
 !.config/nvim
 !.config/rofi
 !.config/yazi
