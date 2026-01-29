@@ -103,6 +103,21 @@ function y() {
     rm -f -- "$tmp"
 }
 
+# rename zellij tab by current directory
+# https://www.reddit.com/r/zellij/comments/10skez0/does_zellij_support_changing_tabs_name_according/
+zellij_tab_name_update() {
+    if [[ -n $ZELLIJ ]]; then
+        local current_dir=$PWD
+        if [[ $current_dir == $HOME ]]; then
+            current_dir="~"
+        else
+            current_dir=${current_dir##*/}
+        fi
+        command nohup zellij action rename-tab $current_dir >/dev/null 2>&1
+        command nohup zellij action rename-pane $current_dir >/dev/null 2>&1
+    fi
+}
+
 # my aliases
 alias dc='docker compose'
 alias k=kubectl
@@ -115,3 +130,7 @@ alias mpa='mpv --no-video'
 alias gemini='docker run --rm -it -v ~/.gemini-home:/home/node gemini gemini'
 alias geminithis='docker run --rm -it -v ~/.gemini-home:/home/node -v ./:/home/node/output gemini gemini'
 alias minikubestart='minikube start && minikube addons enable ingress && minikube addons enable metrics-server && kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisioner/v0.0.31/deploy/local-path-storage.yaml'
+
+# call update zellij tab name when directory are changed
+zellij_tab_name_update
+chpwd_functions+=(zellij_tab_name_update)
