@@ -127,6 +127,7 @@ alias grep='grep --color'
 alias g=git
 alias vim=nvim
 alias mpa='mpv --no-video'
+alias vcc='nvim +CodeCompanionChat +only'
 alias gemini='docker run --rm -it -v ~/.gemini-home:/home/node gemini gemini'
 alias geminithis='docker run --rm -it -v ~/.gemini-home:/home/node -v ./:/home/node/output gemini gemini'
 alias minikubestart='minikube start && minikube addons enable ingress && minikube addons enable metrics-server && kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisioner/v0.0.31/deploy/local-path-storage.yaml'
