@@ -88,6 +88,9 @@ zle -N zle-line-init
     source /usr/share/zsh/plugins/zsh-completions/zsh-completions.zsh && \
     source <(kubectl completion zsh)
 
+# rbw source completions if is installed
+[[ -f /usr/bin/rbw ]] && source <(rbw gen-completions zsh)
+
 # connect to ssh with vi mode and clear screen binding, example: s user@host
 function s() {
     TERM=xterm-256color ssh "$@" -t "export EDITOR=vi; bash -i -c 'bind \"\\C-l\":clear; bash -o vi'"
