@@ -9,6 +9,7 @@
 !archlinux-packages.txt
 !.config/
 .config/*
+!.config/foot
 !.config/ghostty
 !.config/hypr
 !.config/kitty
