@@ -18,8 +18,8 @@ dwm (X11)
  * [zsh](https://man.archlinux.org/man/zsh.1.en) less bloated with [fzf](https://junegunn.github.io/fzf) and vi mode
  * [nvim](https://neovim.io/) with [kickstart](https://github.com/nvim-lua/kickstart.nvim)
  * [tmux](https://github.com/tmux/tmux)
- * [kitty](https://sw.kovidgoyal.net/kitty/)
- * .bashrc, .editrc and .inputrc set to use [vi mode](https://wiki.archlinux.org/title/Readline#Editing_mode)
+ * [foot](https://codeberg.org/dnkl/foot) / [kitty](https://sw.kovidgoyal.net/kitty/)
+ * .zshrc .bashrc, .editrc and .inputrc set to use [vi mode](https://wiki.archlinux.org/title/Readline#Editing_mode)
  * [rofi](https://davatorium.github.io/rofi)
  * [dunst](https://dunst-project.org)
 
@@ -66,4 +66,4 @@ EndSection
 ```
 
 ### License
-[GPL-3.0](LICENSE)
+[GPL-2.0](LICENSE)
