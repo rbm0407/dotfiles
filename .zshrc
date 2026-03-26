@@ -131,8 +131,7 @@ alias g=git
 alias vim=nvim
 alias mpa='mpv --no-video'
 alias vcc='nvim +CodeCompanionChat +only'
-alias gemini='docker run --rm -it -v ~/.gemini-home:/home/node gemini gemini'
-alias geminithis='docker run --rm -it -v ~/.gemini-home:/home/node -v ./:/home/node/output gemini gemini'
+alias codexthis='docker run --rm -it -v ~/.codex-home:/home/node -v ./:/home/node/output codex codex'
 alias minikubestart='minikube start && minikube addons enable metrics-server && kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisioner/v0.0.35/deploy/local-path-storage.yaml'
 
 # call update zellij tab name when directory are changed
