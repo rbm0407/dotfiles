@@ -11,12 +11,14 @@
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
+        "niri/workspaces",
         "hyprland/mode",
         "hyprland/scratchpad",
         "custom/media"
     ],
     "modules-center": [
-        "hyprland/window"
+        "hyprland/window",
+        "niri/window"
     ],
     "modules-right": [
         "mpd",
@@ -30,6 +32,7 @@
         "backlight",
         "keyboard-state",
         "hyprland/language",
+        "niri/language",
         "battery",
         "battery#bat2",
         "clock",
