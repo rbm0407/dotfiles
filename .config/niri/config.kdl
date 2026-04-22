@@ -377,7 +377,7 @@ binds {
     Mod+Shift+Return hotkey-overlay-title="Open a Terminal: foot" { spawn "foot" "-e" "zsh" "-c" "''zellij -n compact -s z || zellij a z''"; }
     Mod+P hotkey-overlay-title="Run an Application: rofi" { spawn "rofi" "-show" "drun"; }
     Mod+T hotkey-overlay-title="Toggle waybar" { spawn "killall" "-SIGUSR1" "waybar" "||" "waybar"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock" "--color" "000000"; }
 
     // Call "keyboard as mouse tool"
     Mod+G { spawn "wl-kbptr"; }
