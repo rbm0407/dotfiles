@@ -11,3 +11,5 @@ vim.o.relativenumber = true
 vim.o.wrap = true
 
 vim.o.guicursor = "n-v-c:block-blinkwait700-blinkoff400-blinkon250,i:ver25-blinkwait700-blinkoff400-blinkon250"
+
+vim.opt.colorcolumn = "80"
