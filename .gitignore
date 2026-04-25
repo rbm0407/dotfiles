@@ -17,6 +17,7 @@
 !.config/niri
 !.config/nvim
 !.config/rofi
+!.config/user-dirs.dirs
 !.config/yazi
 !.config/waybar
 !.config/zellij
