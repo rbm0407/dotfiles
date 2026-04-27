@@ -6,6 +6,7 @@ bluez
 bluez-utils
 debugedit
 docker
+dms-shell-niri
 dunst
 efibootmgr
 eza
