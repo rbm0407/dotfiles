@@ -1,0 +1,6 @@
+set reverse true
+set sortby time
+set info time
+set previewer ~/.config/lf/previewer.sh
+
+map <enter> $nvim "$f"
