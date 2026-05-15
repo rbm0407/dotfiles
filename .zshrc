@@ -20,6 +20,9 @@ setopt PROMPT_SUBST
 # vi mode
 bindkey -v
 
+# open lfcd with CTRL+O
+bindkey -s '^o' 'lfcd\n'
+
 # history options
 HISTFILE=~/.zsh_history
 HISTSIZE=999999
@@ -96,29 +99,8 @@ function s() {
     TERM=xterm-256color ssh "$@" -t "export EDITOR=vi; bash -i -c 'bind \"\\C-l\":clear; bash -o vi'"
 }
 
-# use yazi by pressing y to change directory and update cwd
-function y() {
-    local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
-    yazi "$@" --cwd-file="$tmp"
-    if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-        builtin cd -- "$cwd"
-    fi
-    rm -f -- "$tmp"
-}
-
-# rename zellij tab by current directory
-# https://www.reddit.com/r/zellij/comments/10skez0/does_zellij_support_changing_tabs_name_according/
-zellij_tab_name_update() {
-    if [[ -n $ZELLIJ ]]; then
-        local current_dir=$PWD
-        if [[ $current_dir == $HOME ]]; then
-            current_dir="~"
-        else
-            current_dir=${current_dir##*/}
-        fi
-        command nohup zellij action rename-tab $current_dir >/dev/null 2>&1
-        command nohup zellij action rename-pane $current_dir >/dev/null 2>&1
-    fi
+lfcd () {
+    cd "$(command lf -print-last-dir "$@")"
 }
 
 # my aliases
@@ -131,9 +113,4 @@ alias g=git
 alias vim=nvim
 alias mpa='mpv --no-video'
 alias vcc='nvim +CodeCompanionChat +only'
-alias codexthis='docker run --rm -it -v ~/.codex-home:/home/node -v ./:/home/node/output codex codex'
 alias minikubestart='minikube start && minikube addons enable metrics-server && kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisioner/v0.0.35/deploy/local-path-storage.yaml'
-
-# call update zellij tab name when directory are changed
-zellij_tab_name_update
-chpwd_functions+=(zellij_tab_name_update)
