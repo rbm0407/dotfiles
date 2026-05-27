@@ -1,9 +1,27 @@
-# load compinit for completion system
+### export variables
+
+export EDITOR=nvim
+export PATH="$HOME/go/bin:$PATH"
+export BAT_THEME="zenburn"
+
+
+#### load compinit for completion system
 autoload -Uz compinit && compinit
+
+
+### vi mode
+bindkey -v
+
+
+### prompt colors with git info
+
+# prompt base
+PROMPT_BASE='%{%F{34}%}%n%{%F{40}%}@%{%F{46}%}%m %{%F{229}%}%1~ %{%F{220}%}<placeholder> %{%f%}$ '
 
 # load vcs_info for loading repository statuses
 autoload -Uz vcs_info
-precmd() { vcs_info }
+autoload -Uz add-zsh-hook
+add-zsh-hook precmd vcs_info
 zstyle ':vcs_info:git:*' formats '%b'
 # Enable checking for (un)staged changes, enabling use of %u and %c
 zstyle ':vcs_info:*' check-for-changes true
@@ -14,14 +32,18 @@ zstyle ':vcs_info:*' stagedstr ' +'
 zstyle ':vcs_info:git:*' formats       '(%b%u%c)'
 zstyle ':vcs_info:git:*' actionformats '(%b|%a%u%c)'
 
+# if is root change it to another color
+[[ "$UID" == 0 || "$EUID" == 0 ]] && \
+    PROMPT_BASE="%{%F{196}%}%n%{%F{202}%}@%{%F{208}%}%m %{%F{229}%}%1~ <placeholder> %{%F{196}%}# %{%f%}"
+
+# prompt with vcs_info
+PROMPT=${PROMPT_BASE//<placeholder>/'${vcs_info_msg_0_}'}
+
 # PROMPT_SUBST is required by vcs_info
 setopt PROMPT_SUBST
 
-# vi mode
-bindkey -v
 
-# open lfcd with CTRL+O
-bindkey -s '^o' 'lfcd\n'
+### history settings
 
 # history options
 HISTFILE=~/.zsh_history
@@ -41,22 +63,10 @@ setopt HIST_VERIFY               # Do not execute immediately upon history expan
 setopt APPEND_HISTORY            # append to history file
 setopt HIST_NO_STORE             # Don't store history commands
 
-# Prompt base
-PROMPT_BASE='%{%F{34}%}%n%{%F{40}%}@%{%F{46}%}%m %{%F{229}%}%1~ %{%F{220}%}<placeholder> %{%f%}$ '
 
-# if is root change it to another color
-[[ "$UID" == 0 || "$EUID" == 0 ]] && \
-    PROMPT_BASE="%{%F{196}%}%n%{%F{202}%}@%{%F{208}%}%m %{%F{229}%}%1~ <placeholder> %{%F{196}%}# %{%f%}"
 
-# prompt with vcs_info
-export PROMPT=$(echo -n "$PROMPT_BASE" | sed 's/<placeholder>/${vcs_info_msg_0_}/')
+### change cursor shape for different vi modes
 
-# define nvim as default editor and alias vim command
-export EDITOR=nvim
-export PATH=$PATH:~/.config/composer/vendor/bin:~/go/bin
-export BAT_THEME="zenburn"
-
-# Change cursor shape for different vi modes
 function zle-keymap-select () {
   if [[ ${KEYMAP} == vicmd ]]; then
     # blinking block cursor in command mode
@@ -74,6 +84,9 @@ zle-line-init() {
     echo -ne '\e[5 q'
 }
 zle -N zle-line-init
+
+
+### source plugins
 
 # source fzf if exists
 (( $+commands[fzf] )) && source <(fzf --zsh)
@@ -97,23 +110,20 @@ function s() {
     TERM=xterm-256color ssh "$@" -t "export EDITOR=vi; bash -i -c 'bind \"\\C-l\":clear; bash -o vi'"
 }
 
-# use yazi by pressing y to change directory and update cwd
-function y() {
-    local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
-    yazi "$@" --cwd-file="$tmp"
-    if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-        builtin cd -- "$cwd"
-    fi
-    rm -f -- "$tmp"
-}
 
-# my aliases
+### my custom bindings
+
+# open lfcd with CTRL+O
+bindkey -s '^o' 'lfcd\n'
+
+
+### my aliases
+
 alias dc='podman-compose'
 alias k=kubectl
-alias l='ls -F'
 alias ls=eza
+alias l='eza -F'
 alias grep='grep --color'
-alias g=git
 alias mpa='mpv --no-video'
 alias minikubestart='minikube start && minikube addons enable metrics-server && kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisioner/v0.0.35/deploy/local-path-storage.yaml'
 alias vim=nvim
