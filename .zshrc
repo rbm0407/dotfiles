@@ -76,7 +76,7 @@ zle-line-init() {
 zle -N zle-line-init
 
 # source fzf if exists
-[[ -f /usr/bin/fzf ]] && source <(fzf --zsh)
+(( $+commands[fzf] )) && source <(fzf --zsh)
 
 # source autosuggestions if exists
 [[ -f /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ]] && \
@@ -86,31 +86,34 @@ zle -N zle-line-init
 [[ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] && \
     source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# source completions if exists
-[[ -f /usr/share/zsh/plugins/zsh-completions/zsh-completions.zsh ]] && \
-    source /usr/share/zsh/plugins/zsh-completions/zsh-completions.zsh && \
-    source <(kubectl completion zsh)
+# kubectl source completions if is installed
+(( $+commands[kubectl] )) && source <(kubectl completion zsh)
 
 # rbw source completions if is installed
-[[ -f /usr/bin/rbw ]] && source <(rbw gen-completions zsh)
+(( $+commands[rbw] )) && source <(rbw gen-completions zsh)
 
 # connect to ssh with vi mode and clear screen binding, example: s user@host
 function s() {
     TERM=xterm-256color ssh "$@" -t "export EDITOR=vi; bash -i -c 'bind \"\\C-l\":clear; bash -o vi'"
 }
 
-lfcd () {
-    cd "$(command lf -print-last-dir "$@")"
+# use yazi by pressing y to change directory and update cwd
+function y() {
+    local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+    yazi "$@" --cwd-file="$tmp"
+    if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+        builtin cd -- "$cwd"
+    fi
+    rm -f -- "$tmp"
 }
 
 # my aliases
-alias dc='docker compose'
+alias dc='podman-compose'
 alias k=kubectl
 alias l='ls -F'
 alias ls=eza
 alias grep='grep --color'
 alias g=git
-alias vim=nvim
 alias mpa='mpv --no-video'
-alias vcc='nvim +CodeCompanionChat +only'
 alias minikubestart='minikube start && minikube addons enable metrics-server && kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisioner/v0.0.35/deploy/local-path-storage.yaml'
+alias vim=nvim

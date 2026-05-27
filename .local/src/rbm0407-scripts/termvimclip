@@ -1,3 +1,6 @@
 #!/bin/bash
 
-TEMP_FILE=$(mktemp -p /tmp termvimclip.XXXXXXXX) && foot -e nvim -c "startinsert" "$TEMP_FILE" && head -c -1 "$TEMP_FILE" | wl-copy
+TEMP_FILE=$(mktemp -p /tmp termvimclip.XXXXXXXX) &&
+  foot -e nvim -c "startinsert" "$TEMP_FILE" &&
+  head -c -1 "$TEMP_FILE" | wl-copy &&
+  rm "$TEMP_FILE"
