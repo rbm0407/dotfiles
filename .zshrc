@@ -99,6 +99,13 @@ zle -N zle-line-init
 [[ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] && \
     source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# in case using gentoo
+(( $+commands[emerge] )) && \
+    [[ -f /usr/share/zsh/site-functions/zsh-autosuggestions.zsh ]] && \
+        source /usr/share/zsh/site-functions/zsh-autosuggestions.zsh
+    [[ -f /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh ]] && \
+        source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
+
 # kubectl source completions if is installed
 (( $+commands[kubectl] )) && source <(kubectl completion zsh)
 
