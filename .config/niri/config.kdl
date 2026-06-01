@@ -9,7 +9,6 @@ environment {
     QT_STYLE_OVERRIDE "Adwaita-Dark"
     QT_QPA_PLATFORM "wayland"
     QT_QPA_PLATFORMTHEME "qt6ct"
-    DBUS_SESSION_BUS_ADDRESS "unix:path=/run/user/1000/bus"
 }
 
 // Input device configuration.
