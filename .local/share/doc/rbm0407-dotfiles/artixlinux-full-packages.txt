@@ -77,10 +77,8 @@ wireguard-openrc
 wireguard-tools
 wireplumber-openrc
 wl-clipboard
-wl-kbptr
 xdg-desktop-portal-gtk
 xwayland-satellite
-yay
 zsh
 zsh-autosuggestions
 zsh-completions
