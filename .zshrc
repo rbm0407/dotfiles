@@ -34,7 +34,7 @@ zstyle ':vcs_info:git:*' actionformats '(%b|%a%u%c)'
 
 # if is root change it to another color
 [[ "$UID" == 0 || "$EUID" == 0 ]] && \
-    PROMPT_BASE="%{%F{196}%}%n%{%F{202}%}@%{%F{208}%}%m %{%F{229}%}%1~ <placeholder> %{%F{196}%}# %{%f%}"
+    PROMPT_BASE="%{%F{196}%}%n%{%F{202}%}@%{%F{208}%}%m %{%F{229}%}%1~ <placeholder>%{%F{196}%}# %{%f%}"
 
 # prompt with vcs_info
 PROMPT=${PROMPT_BASE//<placeholder>/'${vcs_info_msg_0_}'}
