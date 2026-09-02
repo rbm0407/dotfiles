@@ -396,6 +396,7 @@ binds {
 
     // Call "keyboard as mouse tool"
     Mod+G { spawn "wl-kbptr"; }
+    Mod+Shift+G { spawn "wl-kbptr" "-o" "modes=floating,click" "-o" "mode_floating.source=detect"; }
 
     // Dismiss notifications
     Ctrl+Space { spawn "makoctl" "dismiss"; }
