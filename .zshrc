@@ -112,6 +112,10 @@ zle -N zle-line-init
 # rbw source completions if is installed
 (( $+commands[rbw] )) && source <(rbw gen-completions zsh)
 
+# import lfcd
+[[ -f /usr/share/lf/lfcd.sh ]] && \
+    source /usr/share/lf/lfcd.sh
+
 # connect to ssh with vi mode and clear screen binding, example: s user@host
 function s() {
     TERM=xterm-256color ssh "$@" -t "export EDITOR=vi; bash -i -c 'bind \"\\C-l\":clear; bash -o vi'"
@@ -128,9 +132,8 @@ bindkey -s '^o' 'lfcd\n'
 
 alias dc='podman-compose'
 alias k=kubectl
-alias ls=eza
-alias l='eza -F'
+alias ls='ls --color'
+alias l='ls -F'
 alias grep='grep --color'
 alias mpa='mpv --no-video'
 alias minikubestart='minikube start && minikube addons enable metrics-server && kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisioner/v0.0.35/deploy/local-path-storage.yaml'
-alias vim=nvim
